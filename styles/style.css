@@ -1,0 +1,77 @@
+body {
+    background: white;
+    font-family: serif;
+    min-width:max-content;
+}
+
+header {
+    font-size:45px;
+    background:linear-gradient(gray, white);
+    display: flex;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+}
+
+div {
+    font-size: 40px;
+    width: 15em;
+    border: 10px double black;
+    padding: 0px 20px;
+    background: whitesmoke;
+    margin-left: 150px;
+}
+
+.sub {
+    font-size: 25px;
+}
+
+
+em {
+    color: red;
+}
+
+h2 {
+    font-size: 50px;
+    border: 4px solid black;
+    border-radius: 1.5em;
+    background: linear-gradient(skyblue, white);
+}
+
+h3 { 
+    font-size: 30px;
+    padding: 1rem 2rem;
+    border-left: 6px dotted black;
+}
+
+pre {
+    font-size:20px;
+    border: 3px solid black;
+    width: 75em;
+    background: lightgray;
+}
+
+img {
+    border: 3px solid black;
+    zoom: 1.5;
+    margin-left: 150px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.exp {
+    width: 65em;
+    padding: 0px 50px;
+}
+
+footer {
+    font-size: 30px;
+    background: skyblue;
+    width: 100%;
+}
+
+
+
+

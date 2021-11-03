@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>WEBプログラミング　第二課題</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML要素　<em>紹介</em>＆<em>解説</em></h1>
+        </header>
+
+        <p>ここでは，HTML（WHATWG Living Standard）での <a href="https://html.spec.whatwg.org/multipage/#toc-semantics">「4 The elements of HTML」</a>にあるHTML要素を3つ紹介し，
+           解説を行う．
+        </p>
+
+        <p>なおこのサイトは,日本大学文理学部情報科学科 Webプログラミングの演習課題において作成した．</p>
+
+
+
+        <div>
+            <ol>
+                <li><a href="#title">title要素</a>
+                    <ol>
+                        <li class = "sub">使用例</li>
+                        <li class = "sub">実行結果</li>
+                    </ol>
+                </li>
+                <li><a href="#h1~h6">h1，h2，h3，h4，h5，h6要素</a>
+                    <ol>
+                        <li class = "sub">使用例</li>
+                        <li class = "sub">実行結果</li>
+                    </ol>
+                </li>
+                <li><a href="#em">em要素</a>
+                    <ol>
+                        <li class = "sub">使用例</li>
+                        <li class = "sub">実行結果</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+        <h2 id="title"><center>title要素</center></h2>
+        <h3>使用例</h3>
+        <pre>
+            <code>
+                &lt;head&gt;
+
+                    &lt;title&gt;ここにtitleを入力することで名前が表示されます．&lt;/title&gt;
+
+                &lt;/head&gt;
+            </code>
+        </pre>
+        <p class = "exp">このように,title要素は &lt;head&gt &lt;/head&gt;の中に記入することで設定することができる．</p>
+
+        <h3>実行結果</h3>
+        <img src="images/title要素.png">
+        <p class = "exp">title要素では，このようなコードをHTML内に組み込むことによって，ウェブページを表示させた際に表示される文言を決定させることができる．
+           また，ページを開いた際にも，タブに設定した名前が表示されるようになる．
+        </p>
+
+        <p class = "exp">このタイトルを設定する際，検索結果などに使用されるため分かりやすいタイトルにすることが望ましい．
+            また，長いタイトルに設定するとタブでは実行結果の画像のように，最後まで読めなくなってしまう．
+        </p>
+    
+        <h2 id="h1~h6"><center>h1，h2，h3，h4，h5，h6要素</center></h2>
+        <h3>使用例</h3>
+        <pre>
+            <code>
+                &lt;body&gt;
+
+                    &lt;h1&gt;これがh1要素です．&lt;/h1&gt;
+                    &lt;h2&gt;これがh2要素です．&lt;/h2&gt;
+                    &lt;h3&gt;これがh3要素です．&lt;/h3&gt;
+                    &lt;h4&gt;これがh4要素です．&lt;/h4&gt;
+                    &lt;h5&gt;これがh5要素です．&lt;/h5&gt;
+                    &lt;h6&gt;これがh6要素です．&lt;/h6&gt;
+
+                &lt;/body&gt;
+            </code>
+        </pre>
+        <p class = "exp">このように，&lt;body&gt &lt;/body&gt;の中に記入することで設定することができる．</p>
+        <h3>実行結果</h3>
+        <img src="images/h1~h6要素.png">
+        <p class = "exp">h1~h6要素では，このように1つh1からh6要素をそれぞれ順番に設定することによって見出しを設定することができる．
+            h1から数字が上がっていくにつれ，小見出しとなっていく．この設定では，h1からh3など数字を飛ばしての設定は不可能であるため,
+            注意する必要がある．また，h1要素は1ページに1つだけの使用が推奨されている．
+        </p>
+
+        <p class = "exp">見出し設定の際，文字のサイズを変えるという意図でh1~h6要素を使用するのは適していないため，注意する必要がある．</p>
+
+        <h2 id="em"><center>em要素</center></h2>
+        <h3>使用例</h3>
+        <pre>
+            <code>
+                &lt;body&gt;
+                    
+                    &lt;p&gt;p要素の中など，文を書いているときに強調したい所などがあれば，&lt;em&gt;em要素&lt;/em&gt;を使用する．&lt;/p&gt;
+
+                &lt;/body&gt;
+            </code>
+        </pre>
+        <p class = "exp">このように&lt;body&gt &lt;/body&gt;の中の&lt;p&gt &lt;/p&gt;の強調したい部分を&lt;em&gt &lt;/em&gt;で囲う事により設定することができる．</p>
+        <h3>実行結果</h3>
+        <img src="images/em要素.png">
+        <p class = "exp">em要素では，文中の大切な部分や，よく見てほしいところなどの強調したい部分に使用することによって実行結果のようにすることができる．
+            このem要素の強調させる方法は，CSSによって色や大きさなど様々なアレンジを施すことができる．CSSの設定がされていない場合はem要素の部分は斜体（※フォントによる）のみの違いで表示される．
+            （なお，実行結果では色設定が赤，フォントサイズを本文より10pxほど大きく設定した）
+        </p>
+
+        <footer><center>日本大学文理学部情報科学科　2年　5420050　土橋一斗</center></footer>
+    </body>
+</html>
+
+
+
